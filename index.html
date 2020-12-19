@@ -17,11 +17,11 @@
             scroll-behavior: smooth;
         }
        header{
-          background-image: url('./images/banner.jpg');
-          height: 40em;
-          background-size: cover;
+          background-image: url('./images/banner.jpg'); 
+          height: 20em; 
+          padding-bottom: 500px;  
+          background-size:100% 600px;
           background-repeat: no-repeat;
-          background-position: center;
             }
         .links > li > a:hover{
             color: red;
@@ -30,7 +30,7 @@
             color: white;
         }
         .down{
-            margin-top: -2em;
+            margin-top: -4.5em;
             color: red;
             font-size: 2em;
         }
@@ -74,85 +74,98 @@
         #img3{
           height: 21em;
         }
-        
-        @media (max-width: 576px){
-          header{
-          background-image: url('./images/banner1.jpg');
-          
-            } 
-          .links > li > a{
-                text-align: center;
-                background-color: #111111;
-                opacity: .8;
-        }
-        .links > li > a:hover{
-                background-color: white;
-                opacity: .8;
-                font-weight: bold;
 
+        @media (max-width: 576px) {
+          .Designer{
+            text-align: center;
+          }
+          .links > li > a:hover{
+            background-color: white;
+            color:black;
         }
-        .Designer{
-          text-align: center;
-          margin-top: 5em;
+        .links > li > a{
+            text-align: center;
+            font-weight: bold;
         }
-        .card{
-          margin-top: 2em;
-          margin-left: 3.5em;
-        }
-        }
-
-       
-
-/*@media (max-width: 393px) { 
-  header{
-          background-image: url('./images/banner1.jpg');
-          height: 40em;
-          width: 24.5em;
-          
-            } 
-  #Designer{
-    background-color: black;
-    text-align: center;
-    opacity: .8;
-  }     
-  .links > li > a{
-    background-color: black;
-    text-align: center;
-    opacity: .8;
-        } 
         .down{
-            margin-top: -2em;
-            color:white;
+            margin-top: -6em;
+            color: red;
             font-size: 2em;
         }
         .arrow-up{
-            margin-left: 20em;
+            margin-left: 24em;
             margin-top: -5em;
             position: fixed;
-            border-radius: 50%;
             z-index: 1;
+            border-radius: 50%;
         }
         .card{
-          margin-left: 2em;
-          margin-bottom: 2em;
-          justify-content:between;
+          margin-left: 4em;
         }
-        #mail{
-          margin-top: -0em;
-        } 
-        .Designer h1{
-          text-align: center;
-        }   
-        #portfolio{
-          width: 24.5em;
+          
+          }
+
+@media (min-width: 576px) and (max-width: 768px) { 
+  .links > li > a:hover{
+            background-color: white;
+            color:black;
         }
-        #contact{
-          width: 24.5em;
+        .links > li > a{
+            text-align: center;
+            font-weight: bold;
         }
-        
-            }
-*/
-        
+        .arrow-up{
+            margin-left: 30em;
+            margin-top: -5em;
+            position: fixed;
+            z-index: 1;
+            border-radius: 50%;
+        }
+        .card{
+          margin-left: 5em;
+        }
+ }
+
+@media (min-width: 768px) and (max-width: 992px) { 
+  .links > li > a{
+            text-align: center;
+            font-weight: bold;
+        }
+        .links > li > a:hover{
+            background-color: white;
+            color:black;
+        }
+        .arrow-up{
+            margin-left: 43em;
+            margin-top: -5em;
+            position: fixed;
+            z-index: 1;
+            border-radius: 50%;
+        }
+ 
+ }
+
+@media (min-width: 992px) and (max-width: 1200px ) { 
+  .links > li > a:hover{
+            background-color: white;
+            color:black;
+        }
+        .links > li > a{
+            text-align: center;
+            font-weight: bold;
+        }
+        .arrow-up{
+            margin-left: 50em;
+            margin-top: -5em;
+            position: fixed;
+            z-index: 1;
+            border-radius: 50%;
+        }
+        .card{
+          margin-left: 5em;
+        }
+ }
+   
     </style>
   </head>
   <body>
@@ -213,7 +226,7 @@
     <!--cards-->
     <div class="container" style="margin-top: 5em;">
         <div class="row" >
-            <div class="col-lg-4 col-md-4 col-sm-12 col-12" data-aos="fade-up"
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12" data-aos="fade-up"
             data-aos-anchor-placement="top-bottom">
                 <div class="card bg-dark text-white border-white" style="width: 18rem;">
                     <img src="./images/html.webp" class="card-img-top mx-auto mt-3" alt="...">
@@ -222,7 +235,7 @@
                     </div>
                   </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-12" data-aos="fade-up"
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12 pt-2" data-aos="fade-up"
             data-aos-anchor-placement="top-bottom">
                 <div class="card bg-dark text-white  border-white" style="width: 18rem;">
                     <img src="./images/css.webp" class="card-img-top mx-auto mt-3" alt="...">
@@ -231,7 +244,7 @@
                     </div>
                   </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-12" data-aos="fade-up"
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12 mx-auto pt-2" data-aos="fade-up"
             data-aos-anchor-placement="top-bottom">
                 <div class="card bg-dark text-white  border-white" style="width: 18rem;">
                     <img src="./images/php.png" class="card-img-top card3 mx-auto mt-3" alt="...">
@@ -245,7 +258,7 @@
 
     <div class="container"  style="margin-top: 5em;">
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12 col-12" data-aos="fade-up"
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12" data-aos="fade-up"
             data-aos-anchor-placement="top-bottom">
                 <div class="card bg-dark text-white border-white" style="width: 18rem;">
                     <img src="./images/bootstrap.png" class="card-img-top mx-auto mt-3" alt="...">
@@ -254,7 +267,7 @@
                     </div>
                   </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-12" data-aos="fade-up"
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12 pt-2" data-aos="fade-up"
             data-aos-anchor-placement="top-bottom">
                 <div class="card bg-dark text-white  border-white" style="width: 18rem;">
                     <img src="./images/javascript.png" class="card-img-top mx-auto mt-3" alt="...">
@@ -263,7 +276,7 @@
                     </div>
                   </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-12" data-aos="fade-up"
+            <div class="col-lg-4 col-md-12 pt-2 col-sm-12 col-12" data-aos="fade-up"
             data-aos-anchor-placement="top-bottom">
                 <div class="card bg-dark text-white border-white" style="width: 18rem;">
                     <img src="./images/react.png" class="card-img-top card3 mx-auto mt-3" alt="...">
@@ -280,7 +293,7 @@
 
     <div class="container fade-down">
         <div class="row" id="portfolio" style=" border: 2px solid white;">
-            <div class="col-lg-6 col-md-4 col-sm-12 col-12" data-aos="flip-left" id="aboutimg">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12" data-aos="flip-left" id="aboutimg">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
@@ -303,7 +316,7 @@
                     </a>
                   </div>
             </div>
-            <div class="col-lg-6 col-md-4 col-sm-12 text-white pt-3 col-12" data-aos="flip-right" style="background-color: #111111;">
+            <div class="col-lg-6 col-md-6 col-sm-12 text-white pt-3 col-12" data-aos="flip-right" style="background-color: #111111;">
                 <h4><font color="red" >Name </font> : Shivam Kumar</h4>
                 <h4><font color="red" >Education</font> : M.C.A Passout 2021</h4>
                 <h4><font color="red" >College</font> : Graphic era university, Dehradun</h4>
@@ -323,7 +336,7 @@
 
     <div class="container" style="margin-top: 5em;">
         <div class="row" >
-            <div class="col-lg-4 col-md-4 col-sm-12 col-12" data-aos="zoom-in">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12" data-aos="zoom-in">
                 <div class="card bg-dark text-white border-white" style="width: 18rem;">
                     <img src="./images/Ecommerce.png" style="height: 10em;" alt="...">
                     <div class="card-body">
@@ -334,7 +347,7 @@
                     </div>
                   </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-12" data-aos="zoom-in">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12 pt-2" data-aos="zoom-in">
                 <div class="card bg-dark text-white border-white" style="width: 18rem;">
                     <img src="./images/netflix.png" style="height: 10em;" alt="...">
                     <div class="card-body" style="height: 12.5em;">
@@ -345,7 +358,7 @@
                     </div>
                   </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-12" data-aos="zoom-in">
+            <div class="col-lg-4 col-md-12 pt-2 col-sm-12 col-12" data-aos="zoom-in">
                 <div class="card bg-dark text-white border-white" style="width: 18rem;">
                     <img src="./images/amazon.png" style="height: 10em;" alt="...">
                     <div class="card-body" style="height: 12.5em;">
@@ -366,13 +379,13 @@
             <div class="row"  data-aos="fade-down"
             data-aos-easing="linear"
             data-aos-duration="1500">
-                <div class="col-lg-3 col-md-4 col-sm-12 col-12 mt-5 mb-5 d-flex"  >
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12 mt-5 mb-5 d-flex"  >
                     <i class="fa fa-phone text-primary fa-2x mr-3" aria-hidden="true"></i><h4> 9808900925</h4> <i class="fa fa-whatsapp text-success fa-2x ml-3" aria-hidden="true"></i>
                 </div>
-                <div class="col-lg-5 col-md-4 col-sm-12 d-flex col-12" id="mail">
+                <div class="col-lg-5 col-md-6 col-sm-12 d-flex col-12" id="mail">
                     <i class="fa fa-envelope fa-2x text-warning pr-2" aria-hidden="true"></i><h5> Email : Shiva2641998@gmail.com</h5>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 d-flex col-12 mt-5">
+                <div class="col-lg-4 col-md-12 pb-2 col-sm-12 d-flex col-12 mt-5">
                     <i class="fa fa-youtube-play fa-2x pr-2" style="color: red;" aria-hidden="true"></i> <h4>Youtube : student code</h4>
                 </div>
             </div>

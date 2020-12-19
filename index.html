@@ -75,11 +75,35 @@
           height: 21em;
         }
         
-        
+        @media (max-width: 576px){
+          header{
+          background-image: url('./images/banner1.jpg');
+          
+            } 
+          .links > li > a{
+                text-align: center;
+                background-color: #111111;
+                opacity: .8;
+        }
+        .links > li > a:hover{
+                background-color: white;
+                opacity: .8;
+                font-weight: bold;
+
+        }
+        .Designer{
+          text-align: center;
+          margin-top: 5em;
+        }
+        .card{
+          margin-top: 2em;
+          margin-left: 6em;
+        }
+        }
 
        
 
-@media (max-width: 393px) { 
+/*@media (max-width: 393px) { 
   header{
           background-image: url('./images/banner1.jpg');
           height: 40em;
@@ -127,13 +151,13 @@
         }
         
             }
-
+*/
         
     </style>
   </head>
   <body>
     <!--header-->
-    <header >
+    <header class="img-fluid">
         <div class="container" id="home">
             <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand text-white" data-aos="fade-left" href="#"><b><font color="red" style="font-size: 2em;" >S</font>hivam <font style="font-size: 2em;" color="red">K</font>umar</b></a>
